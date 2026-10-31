@@ -1,0 +1,7 @@
+dataset/
+faces.pickle
+attendance.csv
+students.csv
+final_attendance.xlsx
+__pycache__/
+*.pyc
