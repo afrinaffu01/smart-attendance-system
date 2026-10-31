@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Smart Attendance System</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<!-- College Header -->
+
+<div class="header">
+
+<img src="{{ url_for('static', filename='logo.png') }}" class="logo">
+
+<h1>CHEVALIER T. THOMAS ELIZABETH COLLEGE FOR WOMEN</h1>
+
+</div>
+
+<!-- Login Card -->
+
+<div class="card">
+
+<h2>Smart Attendance System</h2>
+<p>Using Face Recognition</p>
+
+<form action="/login" method="POST">
+
+<input type="text" placeholder="Admin Username" name="username" required>
+
+<input type="password" placeholder="Admin Password" name="password" required>
+
+<button class="btn">Admin Login</button>
+
+</form>
+
+<div class="divider"></div>
+
+<a href="/student">
+<button class="btn">Student Face Login</button>
+</a>
+
+</div>
+
+</body>
+</html>

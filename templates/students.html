@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Students List</title>
+</head>
+
+<body>
+
+<h1>Students List</h1>
+
+<table border="1">
+
+<tr>
+<th>RegisterNo</th>
+<th>Name</th>
+<th>Department</th>
+<th>DOB</th>
+<th>Phone</th>
+<th>Email</th>
+</tr>
+
+{% for s in students %}
+
+<tr>
+<td>{{ s.RegisterNo }}</td>
+<td>{{ s.Name }}</td>
+<td>{{ s.Department }}</td>
+<td>{{ s.DOB }}</td>
+<td>{{ s.Phone }}</td>
+<td>{{ s.Email }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/dashboard">⬅ Back to Dashboard</a>
+
+</body>
+</html>
